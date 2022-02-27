@@ -1,0 +1,89 @@
+\documentclass[UTF8]{ctexrep}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{listings}
+\lstset{language=Matlab}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\begin{document}
+{\noindent}姓名:陈修言 \quad 学号:2021211223 \quad 班级:信息研21-1 \quad 科目:矩阵理论
+
+{\noindent}\rule{\textwidth}{0.05em}
+
+{\noindent}\textbf{题1.1}
+
+证明:
+
+由题意知，三个点A,B,C对应坐标为：$A(x_i, y_i, z_i)$, $B(x_j, y_j, z_j)$, $C(x_k, y_k, z_k)$,
+所以向量$\overrightarrow{AB} = (x_j-x_i, y_j-y_i, z_j-z_i)$, 向量$\overrightarrow{AC} = (x_k-x_i, y_k-y_i, z_k-z_i)$。由公式可知，由ABC三点组成的三角形面级$S = \frac{1}{2}\left|\overrightarrow{AB} \times \overrightarrow{AC} \right|$。
+
+$$
+    \text{而}\begin{gathered}
+        \overrightarrow{AB} \times \overrightarrow{AC} =
+        \begin{vmatrix}
+            i       & j       & k       \\
+            x_j-x_i & y_j-y_i & z_j-z_i \\
+            x_k-x_i & y_k-y_i & z_k-z_i
+        \end{vmatrix}
+    \end{gathered}
+$$
+
+$$
+    = i* \begin{vmatrix}
+        y_j-y_i & z_j-z_i \\
+        y_k-y_i & z_k-y_k
+    \end{vmatrix} - j* \begin{vmatrix}
+        x_j-x_i & z_j-z_i \\
+        x_k-x_i & z_k-z_i
+    \end{vmatrix} + k * \begin{vmatrix}
+        x_j-x_i & y_j-y_i \\
+        x_k-x_i & y_k-y_i
+    \end{vmatrix}
+$$
+
+$$
+    \therefore |\overrightarrow{AB}\times\overrightarrow{AC}| =
+$$
+
+$$
+    \sqrt{(i^2) * \begin{vmatrix}
+            y_j-y_i & z_j-z_i \\
+            y_k-y_i & z_k-y_k
+        \end{vmatrix} ^2 + (-j)^2 * \begin{vmatrix}
+            x_j-x_i & z_j-z_i \\
+            x_k-x_i & z_k-z_i
+        \end{vmatrix} ^2 + (k^2) * \begin{vmatrix}
+            x_j-x_i & y_j-y_i \\
+            x_k-x_i & y_k-y_i
+        \end{vmatrix}^2}
+$$
+
+$$
+    = \sqrt{\begin{vmatrix}
+            y_j-y_i & z_j-z_i \\
+            y_k-y_i & z_k-y_k
+        \end{vmatrix} ^2 + \begin{vmatrix}
+            x_j-x_i & z_j-z_i \\
+            x_k-x_i & z_k-z_i
+        \end{vmatrix} ^2 + \begin{vmatrix}
+            x_j-x_i & y_j-y_i \\
+            x_k-x_i & y_k-y_i
+        \end{vmatrix}^2}
+$$
+
+证毕！\\
+
+{\noindent}\textbf{题1.2}
+
+由于二阶行列式的值为行/列向量所组成平行四边形的有向面积，所以可以通过判断已知线段和另一个点组成的两个向量之间平行四边形的有向面级，如果为正，表示另一个点在已知线段的逆时针方向，即左方，如果为负则为顺时针方向，即右方，如果为0则与已知线段共线。
+
+MATLAB代码如下：
+
+\begin{lstlisting}
+    % Plot function f(x) = 2*x^3 - x - 2
+    ezplot('2*x^3-x-2',[0, 2])
+    hold on
+    plot([0,2],[0,0],'r')
+    \end{lstlisting}
+
+\end{document}
+
