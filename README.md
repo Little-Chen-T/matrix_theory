@@ -1,5 +1,5 @@
 
-**注：** 本repository中的解答**非官方解答**，只是个人为学习而分享，若您觉得我的分享对您有帮助，还请对本repository赏个star或者在本人关于此解答的[博客](https://blog.csdn.net/qq_32614873?spm=1000.2115.3001.5343)中点个小赞，谢谢！
+**注：** 本repository中的解答**非官方解答**，只是个人为学习而分享，若您觉得我的分享对您有帮助，还请对本repository赏个star或者在本人关于此解答的[博客](https://blog.csdn.net/qq_32614873/category_11663171.html)中点个小赞，谢谢！
 
 ## 说明
 本repository解答的是中国石油大学（北京）梁景伟老师出版的《矩阵理论及其应用（富媒体）》一书
@@ -25,7 +25,7 @@
 
 在homeword文件夹里面会以week_x(x代表周数)为每周作业文件夹，里面包含.md源码(markdown文件夹)，MATLAB源码(matlab_code文件夹)的形式更新每周作业。
 
-同时会在个人的[CSDN博客](https://blog.csdn.net/qq_32614873?spm=1000.2115.3001.5343)上发布习题解答的博客。（别问为什么Github和CSDN都发，问就是骗流量和学习CSDN文章写作 *|手动狗头*）
+同时会在个人的[CSDN博客](https://blog.csdn.net/qq_32614873/category_11663171.html)上发布习题解答的博客。（别问为什么Github和CSDN都发，问就是骗流量和学习CSDN文章写作 *|手动狗头*）
 
 ## 其他（以下内容是废话，可不看）
 homeword.md里面是每周作业的照片，方便查找作业。
